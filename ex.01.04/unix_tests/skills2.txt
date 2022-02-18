@@ -1,8 +1,0 @@
-internet
-unix
-bash
-mamao
-limao
-melancia
-gabriela
-erick
