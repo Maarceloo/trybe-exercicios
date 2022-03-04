@@ -1,4 +1,18 @@
 header {
     background-color: aqua;
     text-align: center;
+    margin-bottom: 10%;
+}
+section article h1 {
+    text-align: center;
+    margin-top: 10%;
+}
+
+section article h2 {
+    text-align: center;
+}
+
+nav ul li {
+    text-align: center;
+    margin-bottom: 3%;
 }
