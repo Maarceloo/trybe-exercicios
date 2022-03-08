@@ -7,4 +7,4 @@ for (let x = 0; x < numeros.length; x++) {
     resultados.push(numeros[x] / 2)
 }
 
-console.log(resultado);
+console.log(resultados);
