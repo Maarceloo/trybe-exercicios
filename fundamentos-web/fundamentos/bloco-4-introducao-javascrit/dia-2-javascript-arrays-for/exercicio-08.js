@@ -1,6 +1,6 @@
 let numeros = []
 
-for (let i = 0; i < 25; i++) {
-    numeros = i.push 
+for (let i = 1; i < 26; i++) {
+    numeros.push(i) 
 }
 console.log(numeros);
