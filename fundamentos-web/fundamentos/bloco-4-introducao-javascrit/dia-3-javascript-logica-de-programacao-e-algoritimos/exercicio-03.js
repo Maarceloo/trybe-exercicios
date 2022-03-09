@@ -4,7 +4,7 @@ let maior;
 let menor;
 
 for (let i = 0; i < array.length; i++) {
-    for (let x = 0; x < array[i].length; x++) {
+    for (let x = 0; x < 1; x++) {
         if (i === 0) {
             maior = array[i]
             menor = array[i]
