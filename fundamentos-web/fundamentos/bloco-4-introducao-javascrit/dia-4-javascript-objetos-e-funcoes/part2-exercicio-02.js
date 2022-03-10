@@ -12,5 +12,4 @@ function array (inteiros){
 }
 let lista = [2, 3, 6, 7, 10, 1];
 array(lista)
-console.log(x);
-///console.log("A posicao do maior valor é ", x );
+console.log("A posicao do maior valor é ", x );
