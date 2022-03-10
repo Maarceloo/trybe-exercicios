@@ -15,5 +15,4 @@ leitor.livrosFavoritos.push({
     autor: 'JK Rowling',
     editora: 'Rocco',
 })
-
-console.log(leitor.livrosFavoritos);
+console.log(leitor.nome, ' tem ', leitor.livrosFavoritos.length, 'Livros favoritos');
