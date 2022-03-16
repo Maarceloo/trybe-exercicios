@@ -22,3 +22,32 @@ function createDaysOfTheWeek() {
 createDaysOfTheWeek();
 
 // Escreva seu código abaixo.
+const dezDaysList = [
+  29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+  21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31,
+];
+// EXERCICIO 01 
+let diaDoMes = document.querySelector("#days");
+function diasNoMes() {
+  for (let i = 0; i < dezDaysList.length; i += 1) {
+    let dia = dezDaysList[i];
+    let diaItem = document.createElement("li");
+    if ((dia === 24) | (dia === 25) | (dia === 31)) {
+      diaItem.className = "day holiday";
+      diaItem.innerHTML = dia;
+      diaDoMes.appendChild(diaItem);
+    } else if ((dia === 4) | (dia === 11) | (dia === 18) | (dia === 25)) {
+      diaItem.className = "day friday";
+      diaItem.innerHTML = dia;
+      diaDoMes.appendChild(diaItem);
+    } else {
+      diaItem.className = "day";
+      diaItem.innerHTML = dia;
+      diaDoMes.appendChild(diaItem);
+    }
+  }
+}
+diasNoMes();
+
+// EXERCICIO 02
+
