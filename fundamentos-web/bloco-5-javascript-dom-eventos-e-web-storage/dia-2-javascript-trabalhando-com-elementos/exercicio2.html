@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+        section {
+            border-color: black;
+            border-style: solid;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .main-content {
+            background-color: yellow;
+        }
+
+        .main-content .center-content {
+            background-color: red;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .main-content .center-content p {
+            font-style: italic;
+        }
+
+        .main-content .left-content {
+            background-color: green;
+            width: 60%;
+            margin-left: 0;
+            margin-right: auto;
+        }
+
+        .main-content .left-content .small-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 100%;
+        }
+
+        .main-content .right-content {
+            background-color: blue;
+            width: 60%;
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        .main-content .description {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        // exercicio 01
+        let body = document.getElementsByTagName('body');
+        let h1 = document.createElement('h1');
+        body[0].appendChild(h1);
+        h1.innerText = 'Exercício 5.2 - JavaScript DOM';
+
+        // exercicio 02
+        let main = document.createElement('main');
+        main.classList = 'main-content'
+        body[0].appendChild(main);
+
+        // exercicio 03
+        let section = document.createElement('section')
+        section.classList = 'center-content';
+        main.appendChild(section);
+
+        // exercicio 04
+        let p = document.createElement('p');
+        section.appendChild(p);
+        p.innerText = 'Estou evoluindo cada dia mais, tenho muito a agradecer a mim mesmo por nunca desistir!';
+
+        // exercicio 05
+        let section2 = document.createElement('section')
+        section2.classList = 'left-content';
+        main.appendChild(section2);
+
+        // exercicio 06
+        let section3 = document.createElement('section')
+        section3.classList = 'right-content';
+        main.appendChild(section3);
+
+        // exercicio 07
+        // let imagem = document.createElement('img')
+        // imagem.classList = 'small-image';
+        // section2.appendChild(imagem);
+        // let teste = document.getElementsByClassName('small-image').src = URL
+        // exercicio 08
+        // let naoOrdenada = document.createElement('ul');
+        // naoOrdenada.classList = 'ul'
+        // section3.appendChild(naoOrdenada);
+        // let ul = document.getElementsByClassName('ul')
+        // let lista = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez']
+        // for (let k = 0; k < lista.length; k += 1) { 
+        //     let list =  lista[k]
+
+        // }
+        // exercicio 09
+        for (let i = 0; i < 3; i += 1) {
+            let h3 = document.createElement('h3');
+            main.appendChild(h3);
+        }
+
+    </script>
+</body>
+
+</html>
