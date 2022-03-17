@@ -74,3 +74,12 @@ clicar.addEventListener("click", function () {
 });
 
 // EXERCICIO 04
+function creatButton2(sextaFeira) {
+  let btnSexta = document.createElement('button');
+  btnSexta.id = "sexta-feira"
+  btnSexta.innerHTML = "Sexta-feira"
+  local.appendChild(btnSexta);
+}
+creatButton2('sexta-feira');
+
+// EXERCICIO 05
