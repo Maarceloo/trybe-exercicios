@@ -26,7 +26,7 @@ const dezDaysList = [
   29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
   21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31,
 ];
-// EXERCICIO 01 
+// EXERCICIO 01
 let diaDoMes = document.querySelector("#days");
 function diasNoMes() {
   for (let i = 0; i < dezDaysList.length; i += 1) {
@@ -49,15 +49,22 @@ function diasNoMes() {
 }
 diasNoMes();
 
-let local = document.querySelector('.buttons-container');
+let local = document.querySelector(".buttons-container");
 
 // EXERCICIO 02
 function creatButton(feriados) {
-    let btn = document.createElement('button');
-    btn.id = "btn-holiday"
-    btn.innerText  = "Feriados"
-    local.appendChild(btn)
+  let btn = document.createElement("button");
+  btn.id = "btn-holiday";
+  btn.innerText = "Feriados";
+  local.appendChild(btn);
 }
 creatButton("Feriados");
 
 // EXERCICIO 03
+let click = document.getElementById("btn-holiday");
+let acao = click.addEventListener("click", clicar);
+function clicar() {
+  let holiday = document.getElementsByClassName("day holiday");
+  console.log(acao);
+  console.log(holiday);
+}
