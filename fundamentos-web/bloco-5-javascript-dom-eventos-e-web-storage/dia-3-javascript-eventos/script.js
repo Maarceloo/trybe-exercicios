@@ -61,10 +61,16 @@ function creatButton(feriados) {
 creatButton("Feriados");
 
 // EXERCICIO 03
-let click = document.getElementById("btn-holiday");
-let acao = click.addEventListener("click", clicar);
-function clicar() {
+let clicar = document.getElementById("btn-holiday");
+clicar.addEventListener("click", function () {
   let holiday = document.getElementsByClassName("day holiday");
-  console.log(acao);
-  console.log(holiday);
-}
+  for (let index = 0; index < holiday.length; index += 1) {
+    if (holiday[index].style.backgroundColor === "green") {
+      holiday[index].style.backgroundColor = "rgb(238,238,238)";
+    } else {
+      holiday[index].style.backgroundColor = "green";
+    }
+  }
+});
+
+// EXERCICIO 04
