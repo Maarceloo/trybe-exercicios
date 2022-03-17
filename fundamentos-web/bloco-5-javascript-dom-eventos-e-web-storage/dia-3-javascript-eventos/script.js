@@ -26,18 +26,25 @@ const dezDaysList = [
   29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
   21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31,
 ];
+let listaSexta = [];
 // EXERCICIO 01
 let diaDoMes = document.querySelector("#days");
 function diasNoMes() {
   for (let i = 0; i < dezDaysList.length; i += 1) {
     let dia = dezDaysList[i];
     let diaItem = document.createElement("li");
-    if ((dia === 24) | (dia === 25) | (dia === 31)) {
+    if ((dia === 24) | (dia === 31)) {
       diaItem.className = "day holiday";
       diaItem.innerHTML = dia;
       diaDoMes.appendChild(diaItem);
-    } else if ((dia === 4) | (dia === 11) | (dia === 18) | (dia === 25)) {
+    } else if ((dia === 4) | (dia === 11) | (dia === 18)) {
+      listaSexta.push(dia);
       diaItem.className = "day friday";
+      diaItem.innerHTML = dia;
+      diaDoMes.appendChild(diaItem);
+    } else if (dia === 25) {
+      listaSexta.push(dia);
+      diaItem.className = "day friday holiday";
       diaItem.innerHTML = dia;
       diaDoMes.appendChild(diaItem);
     } else {
@@ -74,12 +81,24 @@ clicar.addEventListener("click", function () {
 });
 
 // EXERCICIO 04
+let btnSexta = document.createElement("button");
 function creatButton2(sextaFeira) {
-  let btnSexta = document.createElement('button');
-  btnSexta.id = "sexta-feira"
-  btnSexta.innerHTML = "Sexta-feira"
+  btnSexta.id = "sexta-feira";
+  btnSexta.innerHTML = "Sexta-feira";
   local.appendChild(btnSexta);
 }
-creatButton2('sexta-feira');
+creatButton2("sexta-feira");
 
 // EXERCICIO 05
+let diasSexta = document.getElementsByClassName("day friday");
+let clicou = document.getElementById("sexta-feira");
+clicou.addEventListener("click", function () {
+  for (let index = 0; index < diasSexta.length; index += 1) {
+    if (diasSexta[index] === "SEXTA-FEIRA!") {
+      diasSexta[index].innerHTML = listaSexta[index];
+    } else {
+      diasSexta[index].innerHTML = "SEXTA-FEIRA !";
+    }
+  }
+});
+
