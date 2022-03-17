@@ -94,10 +94,13 @@ let diasSexta = document.getElementsByClassName("day friday");
 let clicou = document.getElementById("sexta-feira");
 clicou.addEventListener("click", function () {
   for (let index = 0; index < diasSexta.length; index += 1) {
-    if (diasSexta[index] === "SEXTA-FEIRA!") {
+    console.log(listaSexta[index]);
+    console.log(diasSexta[index]);
+    if (diasSexta[index].innerHTML === "SEXTA-FEIRA!") {
       diasSexta[index].innerHTML = listaSexta[index];
+      console.log(listaSexta[index]);
     } else {
-      diasSexta[index].innerHTML = "SEXTA-FEIRA !";
+      diasSexta[index].innerHTML = "SEXTA-FEIRA!";
     }
   }
 });
