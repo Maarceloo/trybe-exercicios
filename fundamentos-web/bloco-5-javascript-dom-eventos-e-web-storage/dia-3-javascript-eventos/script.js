@@ -49,5 +49,15 @@ function diasNoMes() {
 }
 diasNoMes();
 
-// EXERCICIO 02
+let local = document.querySelector('.buttons-container');
 
+// EXERCICIO 02
+function creatButton(feriados) {
+    let btn = document.createElement('button');
+    btn.id = "btn-holiday"
+    btn.innerText  = "Feriados"
+    local.appendChild(btn)
+}
+creatButton("Feriados");
+
+// EXERCICIO 03
