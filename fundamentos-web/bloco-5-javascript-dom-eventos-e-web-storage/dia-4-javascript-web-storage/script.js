@@ -7,3 +7,6 @@ function salvar() {
   });
 }
 salvar();
+
+let teste = document.getElementById('botao').innerHTML;
+localStorage.setItem('click', teste);
