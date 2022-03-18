@@ -102,3 +102,5 @@ clicou.addEventListener("click", function () {
   }
 });
 
+// EXERCICIO 06
+
