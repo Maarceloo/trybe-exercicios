@@ -91,26 +91,44 @@
         main.appendChild(section3);
 
         // exercicio 07
-        // let imagem = document.createElement('img')
-        // imagem.classList = 'small-image';
-        // section2.appendChild(imagem);
-        // let teste = document.getElementsByClassName('small-image').src = URL
-        // exercicio 08
-        // let naoOrdenada = document.createElement('ul');
-        // naoOrdenada.classList = 'ul'
-        // section3.appendChild(naoOrdenada);
-        // let ul = document.getElementsByClassName('ul')
-        // let lista = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez']
-        // for (let k = 0; k < lista.length; k += 1) { 
-        //     let list =  lista[k]
+        let local = document.getElementsByClassName('left-content')[0];
+        let image = document.createElement('img')
+        image.classList = 'small-image'
+        image.src = "https://picsum.photos/200";
+        local.appendChild(image)
 
-        // }
+        // exercicio 08
+        let lista = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez']
+        let ul = document.createElement('ul');
+        let local2 = document.getElementsByClassName('right-content')[0];
+        let addLista = local2.appendChild(ul)
+
+        for(let i = 0; i < lista.length; i += 1){
+            let valor = lista[i]
+
+            let li = document.createElement('li')
+            li.innerHTML = valor;
+
+            addLista.appendChild(li)
+        }
+        
         // exercicio 09
         for (let i = 0; i < 3; i += 1) {
             let h3 = document.createElement('h3');
             main.appendChild(h3);
         }
 
+        // Bonus 01
+        h1.classList = 'title'
+
+        // bonus 02
+        for (let i = 0; i < 3; i += 1) {
+            let h3 = document.getElementsByTagName('h3');
+            h3[i].classList = 'description';
+        }
+
+        // bonus 03
+        
     </script>
 </body>
 
