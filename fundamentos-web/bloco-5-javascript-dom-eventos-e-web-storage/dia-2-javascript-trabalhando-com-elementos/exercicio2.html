@@ -103,7 +103,7 @@
         let local2 = document.getElementsByClassName('right-content')[0];
         let addLista = local2.appendChild(ul)
 
-        for(let i = 0; i < lista.length; i += 1){
+        for (let i = 0; i < lista.length; i += 1) {
             let valor = lista[i]
 
             let li = document.createElement('li')
@@ -111,7 +111,7 @@
 
             addLista.appendChild(li)
         }
-        
+
         // exercicio 09
         for (let i = 0; i < 3; i += 1) {
             let h3 = document.createElement('h3');
@@ -128,7 +128,28 @@
         }
 
         // bonus 03
-        
+        let rmv = document.querySelector('.left-content')
+        rmv.remove()
+
+        // bonus 04
+        let centralize = document.querySelector('.right-content')
+        centralize.style.marginRight = 'auto';
+
+        // bonus 05
+        let cor = document.querySelector('.center-content')
+        cor.style.backgroundColor = 'pink'
+
+        // bonus 06
+        let rmvLista = document.getElementsByTagName('li');
+
+        for (let i = 0; i < rmvLista.length; i += 1) {
+            if (rmvLista[i].innerHTML === 'nove' || rmvLista[i].innerHTML === 'dez') {
+                rmvLista[i].remove();
+            }
+            if ((rmvLista[i].innerHTML === 'dez')) {
+                rmvLista[i].remove();
+            }
+        }
     </script>
 </body>
 
