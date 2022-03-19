@@ -116,4 +116,11 @@ function zoom() {
 }
 zoom();
 
- // EXERCICIO 07
+// EXERCICIO 07
+function tarefa(cozinhar) {
+  let span = document.createElement("span");
+  let divSpan = document.getElementsByClassName("my-tasks")[0];
+  divSpan.appendChild(span);
+  span.innerHTML = 'Sushi'
+}
+tarefa();
