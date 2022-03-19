@@ -121,6 +121,16 @@ function tarefa(cozinhar) {
   let span = document.createElement("span");
   let divSpan = document.getElementsByClassName("my-tasks")[0];
   divSpan.appendChild(span);
-  span.innerHTML = 'Sushi'
+  span.innerHTML = "Sushi";
 }
 tarefa();
+
+// EXERCICIO 08
+function cores(cor) {
+  let divCor = document.createElement("div");
+  let div = document.getElementsByClassName("my-tasks")[0];
+  divCor.className = "task";
+  div.appendChild(divCor);
+  divCor.style.background = cor;
+}
+cores("blue");
