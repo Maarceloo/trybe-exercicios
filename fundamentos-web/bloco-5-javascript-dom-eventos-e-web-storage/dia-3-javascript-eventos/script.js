@@ -134,3 +134,17 @@ function cores(cor) {
   divCor.style.background = cor;
 }
 cores("blue");
+
+// EXERCICIO 09
+function seleciona() {
+  let tarefa = document.getElementsByClassName("task")[0];
+  tarefa.addEventListener("click", muda);
+  function muda() {
+    if (tarefa.className === "task") {
+      tarefa.className = "task selected";
+    } else {
+      tarefa.className = "task";
+    }
+  }
+}
+seleciona();
