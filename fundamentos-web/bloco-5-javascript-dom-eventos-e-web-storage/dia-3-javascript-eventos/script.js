@@ -103,4 +103,17 @@ clicou.addEventListener("click", function () {
 });
 
 // EXERCICIO 06
+let li = document.getElementsByClassName("day");
+function zoom() {
+  for (let i = 0; i < li.length; i++) {
+    li[i].addEventListener("mouseenter", function (event) {
+      event.target.style.fontSize = "38px";
+    });
+    li[i].addEventListener("mouseout", function (event) {
+      event.target.style.fontSize = "20px";
+    });
+  }
+}
+zoom();
 
+ // EXERCICIO 07
