@@ -148,3 +148,22 @@ function seleciona() {
   }
 }
 seleciona();
+
+// EXERCICIO 10
+function diaCor() {
+  let dias = document.getElementsByClassName("day");
+  let cor = document.getElementsByClassName("task selected");
+  for (let i = 0; i < dias.length; i++) {
+    dias[i].addEventListener("click", mudaCor);
+    function mudaCor() {
+      if (dias[i].style.color === "blue") {
+        dias[i].style.color = "rgb(119,119,119)";
+      } else {
+        dias[i].style.color = cor[0].style.background;
+      }
+    }
+  }
+}
+diaCor();
+
+// BONUS
