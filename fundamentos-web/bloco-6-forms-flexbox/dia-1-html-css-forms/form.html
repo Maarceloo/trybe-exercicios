@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Forms</title>
+</head>
+<h1>Formulario</h1>
+<div class="formulario">
+    <form action="" method="get">
+        <div class="texto-simples">
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="" minlength="10" maxlength="40">
+        </div>
+        <div class="texto-simples">
+            <label for="email">Email: </label>
+            <input type="text" name="email" id="" minlength="10" maxlength="50">
+        </div>
+        <div class="opcoes">
+            <input type="radio" name="sexo" id="1" value="cidade">
+            <label for="1">Cidade</label>
+            <input type="radio" name="sexo" id="2" value="campo">
+            <label for="2">Campo</label>
+            <input type="radio" name="sexo" id="3" value="praia">
+            <label for="3">Praia</label>
+            <input type="radio" name="sexo" id="4" value="montanhas">
+            <label for="4">Montanhas</label>
+        </div>
+        <div class="resumo">
+            <h3>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</h3>
+            <label for="resumo"></label>
+            <textarea maxlength="500" name="resumo" cols="50" rows="10"></textarea>
+        </div>
+        <div class="data">
+            <label for="data">Data</label>
+            <input type="date" name="data" id="">
+        </div>
+        <div class="oportunidades">
+            <input type="checkbox" name="oportunidades" id="op-1">
+            <label for="op-1">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+            <br>
+            <input type="checkbox" name="concordo" id="op-2">
+            <label for="op-2">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos
+                futuros.</label>
+        </div>
+
+    </form>
+</div>
+
+<body>
+<script src="./script.js"></script>
+</body>
+
+</html>
