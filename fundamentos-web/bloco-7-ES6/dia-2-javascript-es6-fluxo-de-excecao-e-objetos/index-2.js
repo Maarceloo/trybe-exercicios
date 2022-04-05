@@ -36,14 +36,10 @@ const order = {
   
   const customerInfo = (order) => {
     // Adicione abaixo as informações necessárias.
-    const informações = [];
-    
-    const lista = Object.entries(order);
-    console.log(lista);
-    // for (let index in lista) {
-    //     console.log(index);
-    // }
-  
+    const nome = () => {
+      const name = Object.keys(order).includes(deliveryPerson);
+      console.log(name);
+    }
   }
   
   customerInfo(order);
