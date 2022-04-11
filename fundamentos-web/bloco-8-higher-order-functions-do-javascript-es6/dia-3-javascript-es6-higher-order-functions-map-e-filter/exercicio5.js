@@ -62,6 +62,6 @@ const books = [
 ];
 
 // Adicione o código do exercício aqui:
-const velhos = books.filter((value) => 2022 - value.releaseYear > 60);
-velhos.sort((a, b) => a.releaseYear - b.releaseYear);
-console.log(velhos);
+const nome = books.map((value) => value.author.name);
+nome.sort();
+console.log(nome);
