@@ -44,8 +44,9 @@ const expectedResult = [
 ];
 
 function booksOrderedByReleaseYearDesc() {
+  let ordemNova = [];
   expectedResult.forEach((elemento) => {
-    const ordemNova = elemento.releaseYear.sort((a, b) => b - a);
+    ordemNova.push(elemento.releaseYear.sort((a, b) => b - a));
     console.log(ordemNova);
   });
 }
