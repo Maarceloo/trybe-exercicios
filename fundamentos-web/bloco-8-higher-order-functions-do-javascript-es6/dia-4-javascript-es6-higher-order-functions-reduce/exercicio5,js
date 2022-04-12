@@ -1,0 +1,20 @@
+const names = [
+  "Aanemarie",
+  "Adervandes",
+  "Akifusa",
+  "Abegildo",
+  "Adicellia",
+  "Aladonata",
+  "Abeladerco",
+  "Adieidy",
+  "Alarucha",
+];
+
+const A = names.reduce((acc, elemento) => {
+  if (elemento.toUpperCase().includes("A")) {
+    return (acc += 1);
+  }
+  return acc;
+}, 0);
+
+console.log(A);
