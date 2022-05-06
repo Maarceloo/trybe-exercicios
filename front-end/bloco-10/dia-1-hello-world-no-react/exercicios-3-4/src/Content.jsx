@@ -24,8 +24,7 @@ const conteudos = [
   ];
 
 function exibir() {
-    return conteudos.map((item) => 
-        `O CONTEUDO É: ${item.conteudo} STATUS: ${item.status} BLOCO: ${item.bloco}`
+    conteudos.map((item) => {return item}
     )
 }
 
