@@ -8,20 +8,21 @@ class Cidade extends React.Component {
     if (value.length > 28) alert("LIMITE DE 28 CARACTERES");
 
     const verificaNumero = () => {
-        let item = parseInt(value[0]);
-        console.log(typeof item);
-        if (typeof item === 'number') alert(`funcionou`)
-    }
+      if (isNaN(value[0]) === false) {
+        // LOGICA PARA RESERTAR INPUT
+        alert("SO ACEITA LETRAS");
+      }
+    };
 
     return (
       <label>
         <input
-          type="text"
+          type="string"
           name="cidade"
           placeholder="Cidade"
           value={value}
-          onChange={funcao}
           onBlur={verificaNumero}
+          onChange={funcao}
         />
         {error}
       </label>
@@ -30,7 +31,7 @@ class Cidade extends React.Component {
 }
 
 Cidade.propTypes = {
-    value: PropTypes.string.isRequired
-}
+  value: PropTypes.string.isRequired,
+};
 
 export default Cidade;
